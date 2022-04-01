@@ -109,9 +109,9 @@ for i=1:SS
 
 %[coef,gof]=fit(logR,logIC,'poly1');   %
 
-%Swarm.Fo(i)=ackley(Swarm.r(i)); funcion de prueba  Ackley %w(1)*gof.SSE + w(2)*Dist; % falta definir Dist (distancia entre los puntos)
+Swarm.Fo(i)=ackley(Swarm.r(i)); funcion de prueba  Ackley %w(1)*gof.SSE + w(2)*Dist; % falta definir Dist (distancia entre los puntos)
 
-Swarm.Fo(i)=alpine(Swarm.r(i,:)); % funcion de prueba Alpine
+%Swarm.Fo(i)=alpine(Swarm.r(i,:)); % funcion de prueba Alpine
 
 Swarm.Fop(i)=Swarm.Fo(i);       
 
